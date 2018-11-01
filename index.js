@@ -4,7 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
 const storage = require('./storage');
-const jwt = require('jsonwebtoken');
 
 // config variables
 const port = 8000;
@@ -41,14 +40,6 @@ const smooch = new Smooch({
     keyId: smoochAppKeyId,
     secret: smoochAppKeySecret,
     scope: 'app'
-});
-
-const smoochToken = jwt.sign({
-    scope: 'app'
-}, smoochAppKeySecret, {
-    header: {
-        kid: smoochAppKeyId
-    }
 });
 
 
