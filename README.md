@@ -2,7 +2,7 @@ This project illustrates how to make Smooch work as a secondary channel with a b
 
 It shows how to switch from primary to secondary, and synchronize messages sent from the bot to Facebook to the Smooch conversation if the Smooch appUser is active.
 
-**However, this sample does not show how to synchronize user messages sent while the thread is controlled by the bot to Smooch. In order to accomplish this you would have to maintain a record of the conversation and then inject it into Smooch when control is passed to the secondary agent system.**
+**However, this sample does not show how to synchronize user messages sent to the page with Smooch while the thread is controlled by the bot. In order to accomplish this you would have to maintain a record of the conversation and then inject it into Smooch when control is passed to the secondary agent system.**
 
 # Explanation of project
 
